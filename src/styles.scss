@@ -13,16 +13,6 @@ body {
   gap: 24px;
 }
 
-.board {
-  height: 510px;
-  width: 330px;
-  background-color: #393939;
-  background-size: 30px 30px;
-  background-image:
-    linear-gradient(to right, grey 1px, transparent 1px),
-    linear-gradient(to bottom, grey 1px, transparent 1px);
-}
-
 .info-board {
   display: flex;
   gap: 24px;
@@ -72,7 +62,6 @@ body {
   background-color: #393939;
 }
 
-
 .reset-button {
   background-color: #D94549;
   color: #FAFAFA;
@@ -98,4 +87,62 @@ body {
   background-image:
     linear-gradient(to right, #FAFAFA 1px, transparent 1px),
     linear-gradient(to bottom, #fafafa 1px, transparent 1px);
+  border: 1px solid #000;
+}
+
+.t-row {
+  display: flex;
+}
+
+.t-board {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid grey;
+}
+
+.t-cell {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  color: grey;
+}
+
+.t-cell-0 {
+  background-color: #393939;
+  border: 1px solid grey;
+}
+
+.t-cell-1 {
+  background-color: #00d;
+  border-bottom: 1px solid #00f;
+  border-right: 1px solid #00f;
+  border-top: 1px solid #00b;
+  border-left: 1px solid #00b;
+}
+
+.t-cell-2 {
+  background-color: green;
+}
+
+.t-cell-3 {
+  background-color: red;
+}
+
+.t-score-label {
+  font-weight: bold;
+}
+
+.t-score-label {
+  font-weight: bold;
+}
+
+.t-parent {
+  display: flex;
+}
+
+element.style {
+  width: 44px;
+  left: 0px;
 }
