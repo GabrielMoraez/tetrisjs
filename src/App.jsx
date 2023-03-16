@@ -1,13 +1,27 @@
 import { useState } from 'react'
+import randomPiece from './data/pieces'
 
 import './styles.scss'
 
 function App() {
 
+  const createPiece = (
+    <div style={{
+      height: randomPiece.height * 30,
+      width: randomPiece.width * 30,
+      position: 'absolute',
+      backgroundColor: 'red',
+      zIndex: 10,
+    }}
+    className='piece'
+    ></div>
+  )
+
   return (
     <div className="App">
       <div className='wrapper'>
         <div className='board'>
+          {createPiece}
         </div>
         <div className='info-board'>
           <span className='title'>TETRIS JS</span>

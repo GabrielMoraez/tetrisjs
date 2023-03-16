@@ -92,3 +92,10 @@ body {
     cursor: pointer;
   }
 }
+
+.piece {
+  background-size: 30px 30px;
+  background-image:
+    linear-gradient(to right, #FAFAFA 1px, transparent 1px),
+    linear-gradient(to bottom, #fafafa 1px, transparent 1px);
+}
